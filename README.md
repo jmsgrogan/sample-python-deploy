@@ -1,8 +1,13 @@
 # ichello
 
-This is a basic 'hello world' Python wrapped C++ application to demonstrate a sample packaging approach.
+This is a 'hello world' Python wrapped C++ app to show a sample packaging approach. It is based on the [Reference Nanobind Example](https://github.com/wjakob/nanobind_example) but will diverge over time.
 
-It uses `nanobind` to do the wrapping, defined in `src/binding.cpp`, `CMake` to build the module shared library, defined in `CMakeLists.txt` and `scikit-build-core` to interface the Python project definition in `pyproject.toml` and CMake.
+It uses:
+
+* `nanobind` to do the wrapping, defined in `src/binding.cpp`, 
+* `CMake` to build the module shared library, defined in `CMakeLists.txt`
+* `scikit-build-core` to interface the Python project definition in `pyproject.toml` and CMake.
+* `cibuildwheel` to build wheels for various platforms using the CI.
 
 To locally install and use the package you can do:
 
