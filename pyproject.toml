@@ -24,6 +24,12 @@ build-backend = "scikit_build_core.build"
 
 [tool.scikit-build]
 
+# Only target 64 bit archs
+archs = ["auto64"]
+
+# Only target CPython for now
+skip = "pp*"
+
 # Setuptools-style build caching in a local directory
 build-dir = "build/{wheel_tag}"
 
