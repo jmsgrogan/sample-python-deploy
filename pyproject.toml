@@ -1,6 +1,6 @@
 [project]
 name = "ichello"
-version = "0.0.1"
+version = "0.0.5"
 authors = [
   { name="James Grogan, Irish Centre for High End Computing", email="james.grogan@ichec.ie" },
 ]
